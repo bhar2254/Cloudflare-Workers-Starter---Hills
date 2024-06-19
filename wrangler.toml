@@ -1,0 +1,18 @@
+name = "cloudflare-starter-worker"
+main = "src/worker.js"
+compatibility_date = "2024-01-01"
+workers_dev = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+
+# Uncomment if you have a build script.
+# [build]
+# command = "npm run build"
+
+# Application Enviromnet
+[vars]
+copyright = 'Indian Hills Community College'
+siteTitle = 'Cloudflare Starter Worker'
+url = 'https://cloudflare-starter-worker.ihcc.workers.dev'
